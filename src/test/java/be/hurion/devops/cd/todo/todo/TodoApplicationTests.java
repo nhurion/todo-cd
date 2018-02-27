@@ -1,4 +1,4 @@
-package be.fednot.devops.cd.todo.todo;
+package be.hurion.devops.cd.todo.todo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
