@@ -6,7 +6,9 @@ node {
     }
 
     stage('Build') {
-        sh 'mvn -B -V -U -e clean package'
+        docker.image('maven:3.5-alpine') { c->
+            sh 'mvn -B -V -U -e clean package'
+        }
     }
 
     stage('Archive') {
